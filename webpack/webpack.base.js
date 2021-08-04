@@ -27,22 +27,22 @@ module.exports = {
         }
     },
     module: {
-      rules: [
-          {
-              test: /\.(js|jsx|ts|tsx)$/,
-              exclude: /node_modules/,
-              use: 'babel-loader',
-          },
-          {
-              test: /\.(png|jpg|jpeg|gif|svg)$/,
-              use: 'asset/resource'
-          },
-          {
-              test: /\.(woff|woff2|eot|ttf|otf)$/i,
-              type: 'asset/resource'
-          },
+        rules: [
+            {
+                test: /\.(js|jsx|ts|tsx)$/,
+                exclude: /node_modules/,
+                use: 'babel-loader',
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                use: 'asset/resource'
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource'
+            },
 
-      ]
+        ]
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.jsx', '.js'],
