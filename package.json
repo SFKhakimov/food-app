@@ -7,7 +7,8 @@
     "license": "MIT",
     "scripts": {
         "start": "webpack serve --config ./webpack/webpack.dev.js",
-        "build": "webpack --config ./webpack/webpack.prod.js"
+        "build": "webpack --config ./webpack/webpack.prod.js",
+        "tsc": "tsc"
     },
     "devDependencies": {
         "@babel/core": "^7.14.8",
