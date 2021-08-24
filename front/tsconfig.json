@@ -1,19 +1,22 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
+        "allowSyntheticDefaultImports": true,
         "baseUrl": "src",
         "strict": true,
         "target": "es6",
         "module": "es6",
-        "target": "es5",
         "jsx": "react",
         "allowJs": true,
         "moduleResolution": "node",
         "noEmit": true,
         "paths": {
-            "common/*": ["common/*"]
+            "common/*": ["common/*"],
+            "store/*": ["modules/store/*"],
+            "lk/*": ["modules/lk/*"]
         }
     },
-    "include": ["src"],
+    "include": [
+        "src"
+    ],
     "exclude": ["node_modules", "dist"]
 }
